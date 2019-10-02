@@ -1,0 +1,17 @@
+server:
+  port: 5555
+
+spring:
+  application:
+    name: microservice-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/MSDH233/microservice_config.git
+          username: 853804270@qq.com
+          password: Fja9636307
+          search-paths: /**
+      label: master
+
+
