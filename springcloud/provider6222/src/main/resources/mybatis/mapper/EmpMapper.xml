@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.EmpMapper">
+
+    <select id="get" resultMap="entities.Emp" parameterType="java.lang.Integer">
+      SELECT
+       emp_no ,
+       emp_id ,
+       emp_phone_number ,
+       emp_email ,
+       emp_name
+      FROM emp
+      WHERE emp.id =${empId}
+    </select>
+    <select id="selectAll" resultMap="entities.Emp">
+      SELECT
+       emp_no ,
+       emp_id ,
+       emp_phone_number ,
+       emp_email ,
+       emp_name
+      FROM emp
+    </select>
+    <update id="set"  parameterType="entities.Emp">
+      UPDATE
+      SET emp_phone_number = #{empPhoneNumber},
+          emp_name = #{empName},
+          emp_email = #{empEmail}
+      WHERE emp_id = #{empId}
+    </update>
+</mapper>

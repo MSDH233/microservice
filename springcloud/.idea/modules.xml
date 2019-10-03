@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/api/api.iml" filepath="$PROJECT_DIR$/api/api.iml" />
       <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka7500/eureka7500.iml" filepath="$PROJECT_DIR$/eureka7500/eureka7500.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka7501/eureka7501.iml" filepath="$PROJECT_DIR$/eureka7501/eureka7501.iml" />

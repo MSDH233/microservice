@@ -9,8 +9,6 @@ spring:
       ignored-interfaces:
         -VMware Network Adapter VMnet1
         -VMware Network Adapter VMnet8
-    config:
-      profile: eureka-cluster-7777
       ##preferredNetworks: 192.168.79
 eureka:
   instance:
