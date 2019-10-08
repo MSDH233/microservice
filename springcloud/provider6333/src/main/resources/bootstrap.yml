@@ -4,21 +4,12 @@ spring:
       label: master
       uri: http://127.0.0.1:5555
       name: microservice-provider
-      profile: 6222
+      profile: 6333
       discovery:
         enabled: true
         service-id: microservice-config
-  application:
-    name: microservice-provider
-
 
 eureka:
   client:
-    service-url:
-      defaultZone: http://eureka7777.com:7777/eureka/,http://eureka7779.com:7779/eureka/,http://eureka7778.com:7779/eureka/
-  instance:
-    instance-id: ${spring.application.name}:${servcer.port}
-    prefer-ip-address: true
-server:
-  port: 6222
-
+      service-url:
+        defaultZone: http://eureka7777.com:7777/eureka/,http://eureka7779.com:7779/eureka/,http://eureka7778.com:7778/eureka/

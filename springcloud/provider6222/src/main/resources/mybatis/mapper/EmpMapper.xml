@@ -4,7 +4,17 @@
 
 <mapper namespace="mapper.EmpMapper">
 
-    <select id="get" resultMap="entities.Emp" parameterType="java.lang.Integer">
+    <resultMap id="BaseResultMap" type="entities.Emp">
+        <result column="emp_id" property="empId" jdbcType="INTEGER" />
+        <result column="emp_no" property="empNo" jdbcType="INTEGER" />
+        <result column="emp_name" property="empName" jdbcType="VARCHAR" />
+        <result column="emp_email" property="empEmail" jdbcType="VARCHAR" />
+        <result column="emp_phone_number" property="empPhoneNumber" jdbcType="INTEGER" />
+    </resultMap>
+
+
+
+    <select id="get" resultMap="BaseResultMap" parameterType="java.lang.Integer">
       SELECT
        emp_no ,
        emp_id ,
@@ -12,9 +22,9 @@
        emp_email ,
        emp_name
       FROM emp
-      WHERE emp.id =${empId}
+      WHERE emp_id =${empId}
     </select>
-    <select id="selectAll" resultMap="entities.Emp">
+    <select id="selectAll" resultMap="BaseResultMap">
       SELECT
        emp_no ,
        emp_id ,

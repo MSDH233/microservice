@@ -10,8 +10,7 @@ import service.impl.EmpServiceImpl;
 /**
  * Created by FuJinRan on 2019/10/3.
  */
-@RestController
-@RequestMapping(value = "/emp")
+@RestController(value = "/emp")
 public class EmpController {
 
     @Autowired
