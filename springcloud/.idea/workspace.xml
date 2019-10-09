@@ -2,25 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f38f6951-e332-4db1-8ad5-dd9624bf45f9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/api.jar" afterPath="$PROJECT_DIR$/api/target/api.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider6222/target/classes/controller/EmpController.class" afterPath="$PROJECT_DIR$/provider6222/target/classes/controller/EmpController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider6333/target/classes/controller/EmpController.class" afterPath="$PROJECT_DIR$/provider6333/target/classes/controller/EmpController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eureka7500/target/classes/boot/Application.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eureka7500/target/eureka7500.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eureka7500/target/eureka7500.jar.original" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eureka7500/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eureka7500/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eureka7500/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eureka7500/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eureka7501/target/eureka7501.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eureka7501/target/eureka7501.jar.original" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eureka7501/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eureka7501/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eureka7501/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eureka7501/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eureka7502/target/eureka7502.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eureka7502/target/eureka7502.jar.original" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eureka7502/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eureka7502/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eureka7502/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eureka7502/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eureka7501/target/classes/boot/Application.class" afterPath="$PROJECT_DIR$/eureka7501/target/classes/boot/Application.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eureka7502/pom.xml" afterPath="$PROJECT_DIR$/eureka7502/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider6222/src/main/java/controller/EmpController.java" afterPath="$PROJECT_DIR$/provider6222/src/main/java/controller/EmpController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider6222/src/main/resources/bootstrap.yml" afterPath="$PROJECT_DIR$/provider6222/src/main/resources/bootstrap.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider6222/target/classes/bootstrap.yml" afterPath="$PROJECT_DIR$/provider6222/target/classes/bootstrap.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider6333/src/main/java/controller/EmpController.java" afterPath="$PROJECT_DIR$/provider6333/src/main/java/controller/EmpController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider6333/src/main/resources/bootstrap.yml" afterPath="$PROJECT_DIR$/provider6333/src/main/resources/bootstrap.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/provider6333/target/classes/bootstrap.yml" afterPath="$PROJECT_DIR$/provider6333/target/classes/bootstrap.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -272,35 +274,11 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="eureka7502" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="eureka7502" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
-      </PATH>
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="301" />
-    <option name="y" value="31" />
+    <option name="x" value="909" />
+    <option name="y" value="32" />
     <option name="width" value="1463" />
     <option name="height" value="972" />
   </component>
@@ -906,12 +884,12 @@
       <workItem from="1570021377724" duration="466000" />
       <workItem from="1570069345809" duration="14496000" />
       <workItem from="1570502497698" duration="22330000" />
-      <workItem from="1570611642139" duration="9356000" />
+      <workItem from="1570611642139" duration="9981000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99735000" />
+    <option name="totallyTimeSpent" value="100360000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -923,7 +901,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="301" y="31" width="1463" height="972" extended-state="1" />
+    <frame x="909" y="32" width="1463" height="972" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28767124" sideWeight="0.48238635" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26778242" sideWeight="0.4818376" order="11" side_tool="false" content_ui="tabs" />
