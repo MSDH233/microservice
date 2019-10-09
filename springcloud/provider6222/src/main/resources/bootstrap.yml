@@ -2,7 +2,7 @@ spring:
   cloud:
     config:
       label: master
-      uri: http://127.0.0.1:5555
+      uri: http://config5555.com:5555
       name: microservice-provider
       profile: 6222
       discovery:

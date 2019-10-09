@@ -31,4 +31,7 @@
      </dependencies>
 
     <artifactId>eureka7502</artifactId>
+    <build>
+        <finalName>eureka7502</finalName>
+    </build>
 </project>

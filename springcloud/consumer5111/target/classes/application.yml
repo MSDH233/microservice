@@ -1,0 +1,20 @@
+eureka:
+  client:
+      service-url:
+        defaultZone: http://eureka7777.com:7777/eureka/,http://eureka7779.com:7779/eureka/,http://eureka7778.com:7778/eureka/
+
+spring:
+  application:
+    name: microservice-consumer
+
+server:
+  port: 5111
+
+feign:
+  hystrix:
+    enabled: true
+  compression:
+    request:
+      enabled: true
+    response:
+      enabled: true
