@@ -4,14 +4,11 @@ server:
 spring:
   application:
     name: eureka-cluster
-  cloud:
-    inetutils:
-      ignored-interfaces:
-        -VMware Network Adapter VMnet1
-        -VMware Network Adapter VMnet8
-    config:
-      profile: eureka-cluster-7778
-      ##preferredNetworks: 192.168.79
+    cloud:
+        inetutils:
+          ignored-interfaces:
+            -VMware Network Adapter VMnet1
+            -VMware Network Adapter VMnet8
 
 eureka:
   instance:
