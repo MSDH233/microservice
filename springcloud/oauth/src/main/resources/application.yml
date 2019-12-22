@@ -1,0 +1,26 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: microservice-oauth
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/rbac?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    port: 6379
+    host: 127.0.0.1
+    timeout: 100
+    database: 7
+eureka:
+  client:
+      service-url:
+        defaultZone: http://eureka7777.com:7777/eureka/
+#      ,http://eureka7779.com:7779/eureka/,http://eureka7778.com:7778/eureka/
+
+mybatis:
+  mapper-locations: classpath*:/mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

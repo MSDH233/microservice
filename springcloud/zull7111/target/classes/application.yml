@@ -1,7 +1,8 @@
 eureka:
   client:
       service-url:
-        defaultZone: http://eureka7777.com:7777/eureka/,http://eureka7779.com:7779/eureka/,http://eureka7778.com:7778/eureka/
+        defaultZone: http://eureka7777.com:7777/eureka/
+#        ,http://eureka7779.com:7779/eureka/,http://eureka7778.com:7778/eureka/
 
 spring:
   application:
@@ -11,12 +12,29 @@ server:
   port: 7111
 zuul:
   routes:
-    api-a:
+    api-provider:
      path: /api-provider/**
      service-id: microservice-provider
-    api-b:
+    api-consumer:
      path: /api-consumer/**
      service-id: microservice-consumer
+    api-oauth:
+         path: /api-oauth/**
+         service-id: microservice-oauth
   host:
     max-total-connections: 500
   ignored-services: "*"
+
+  hystrix:
+      command:
+          default:
+              execution:
+                timeout:
+                  enabled: true
+                isolation:
+                      thread:
+                          timeoutInMilliseconds: 3000000
+  #ribbon的超时时间
+  ribbon:
+    ReadTimeout: 3000000
+    ConnectTimeout: 3000000

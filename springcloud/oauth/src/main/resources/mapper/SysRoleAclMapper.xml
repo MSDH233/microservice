@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fujinran.mapper.SysRoleAclMapper" >
+  <resultMap id="BaseResultMap" type="com.fujinran.domain.SysRoleAcl" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="role_id" property="roleId" jdbcType="INTEGER" />
+    <result column="acl_id" property="aclId" jdbcType="INTEGER" />
+    <result column="operator" property="operator" jdbcType="VARCHAR" />
+    <result column="operate_time" property="operateTime" jdbcType="TIMESTAMP" />
+    <result column="operate_ip" property="operateIp" jdbcType="VARCHAR" />
+  </resultMap>
+  <select id="findByRoleOrAcl" parameterType="com.fujinran.domain.SysRoleAcl" resultMap="BaseResultMap">
+    select  id ,role_id ,act_id,operator,operate_time,operate_ip
+    FROM  sys_role_acl
+    WHERE
+      <choose>
+        <when test = "roleId != NULL and act_id == NULL " >
+            role_id = #{roleId}
+        </when>
+        <when test="roleId == NULL and act_id != NULL">
+            act_id = #{aclId}
+        </when>
+        <when test="roleId != NULL and act_id != NULL">
+          act_id = #{aclId}
+          AND role_id = #{roleId}
+        </when>
+        <otherwise>
+            1=2
+        </otherwise>
+      </choose>
+  </select>
+</mapper>

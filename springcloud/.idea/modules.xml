@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/eureka7500/eureka7500.iml" filepath="$PROJECT_DIR$/eureka7500/eureka7500.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka7501/eureka7501.iml" filepath="$PROJECT_DIR$/eureka7501/eureka7501.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka7502/eureka7502.iml" filepath="$PROJECT_DIR$/eureka7502/eureka7502.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oauth/oauth.iml" filepath="$PROJECT_DIR$/oauth/oauth.iml" />
       <module fileurl="file://$PROJECT_DIR$/provider6222/provider6222.iml" filepath="$PROJECT_DIR$/provider6222/provider6222.iml" />
       <module fileurl="file://$PROJECT_DIR$/provider6333/provider6333.iml" filepath="$PROJECT_DIR$/provider6333/provider6333.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud.iml" filepath="$PROJECT_DIR$/springcloud.iml" />

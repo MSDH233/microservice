@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fujinran.mapper.SysAclModuleMapper" >
+  <resultMap id="BaseResultMap" type="com.fujinran.domain.SysAclModule" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="parent_id" property="parentId" jdbcType="INTEGER" />
+    <result column="level" property="level" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="VARCHAR" />
+    <result column="seq" property="seq" jdbcType="INTEGER" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="operator" property="operator" jdbcType="VARCHAR" />
+    <result column="operate_time" property="operateTime" jdbcType="TIMESTAMP" />
+    <result column="operate_ip" property="operateIp" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <select id="selectAclModuleByNameAndParentId" parameterType="com.fujinran.domain.SysAclModule" resultMap="BaseResultMap">
+    select id ,name ,level ,seq ,remark , parent_id ,operator ,operate_time ,operate_ip
+    FROM sys_acl_module
+    where name = #{name}
+    <if test=" parentId != null">
+      AND parent_id = #{parentId}
+    </if>
+  </select>
+
+</mapper>

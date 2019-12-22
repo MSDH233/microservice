@@ -1,0 +1,9 @@
+entities\Emp.class
+clientinterface\EmpClient.class
+entities\Emp$EmpBuilder.class
+entities\Order.class
+clientinterface\EmpClientFallback.class
+entities\Order$OrderBuilder.class
+clientinterface\EmpClientFallback$1.class
+entities\ResultEntity.class
+entities\ResultEntity$ResultEntityBuilder.class

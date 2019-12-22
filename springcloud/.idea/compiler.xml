@@ -14,6 +14,7 @@
         <module name="eureka7500" />
         <module name="eureka7501" />
         <module name="eureka7502" />
+        <module name="oauth" />
         <module name="provider6222" />
         <module name="provider6333" />
         <module name="zull7111" />
@@ -29,6 +30,7 @@
       <module name="eureka7500" target="1.8" />
       <module name="eureka7501" target="1.8" />
       <module name="eureka7502" target="1.8" />
+      <module name="oauth" target="1.8" />
       <module name="provider6222" target="1.8" />
       <module name="provider6333" target="1.8" />
       <module name="springcloud" target="1.8" />

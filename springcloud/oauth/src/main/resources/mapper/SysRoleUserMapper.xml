@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fujinran.mapper.SysRoleUserMapper" >
+  <resultMap id="BaseResultMap" type="com.fujinran.domain.SysRoleUser" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="role_id" property="roleId" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="operator" property="operator" jdbcType="VARCHAR" />
+    <result column="operate_time" property="operateTime" jdbcType="TIMESTAMP" />
+    <result column="operate_ip" property="operateIp" jdbcType="VARCHAR" />
+  </resultMap>
+  <select id="" resultMap="BaseResultMap" parameterType="com.fujinran.domain.SysRoleUser">
+    SELECT id ,role_id ,user_id,operator,operate_time,operate_ip
+    FROM sys_role_user
+    WHERE
+    <choose>
+      <when test = "roleId != NULL and user_id == NULL " >
+        role_id = #{roleId}
+      </when>
+      <when test="roleId == NULL and user_id != NULL">
+        act_id = #{userId}
+      </when>
+      <when test="roleId != NULL and user_id != NULL">
+        act_id = #{userId}
+        AND role_id = #{roleId}
+      </when>
+      <otherwise>
+        1=2
+      </otherwise>
+    </choose>
+  </select>
+</mapper>
