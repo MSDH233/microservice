@@ -76,7 +76,7 @@ public class SimpleFilter extends ZuulFilter {
            sb.append("/");
            for(int i=2 ;i <strs.length ; i++){
                sb.append(strs[i]);
-               if( i != strs.length){
+               if( i < strs.length-1){
                    sb.append("/");
                }
            }

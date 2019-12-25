@@ -13,7 +13,6 @@ public class ExceptionHandle {
     @ExceptionHandler({Exception.class})
     public ResultEntity Exception(Exception exception){
         return  ResultEntity.builder().
-                data(exception.getCause()).
                 message(exception.getMessage()).
                 status("200").
                 build();

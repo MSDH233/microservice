@@ -1,5 +1,0 @@
-com\fujinran\filter\SimpleFilter.class
-com\fujinran\Application.class
-com\fujinran\param\OauthCheckParam.class
-com\fujinran\client\OauthClient.class
-com\fujinran\param\OauthCheckParam$OauthCheckParamBuilder.class
